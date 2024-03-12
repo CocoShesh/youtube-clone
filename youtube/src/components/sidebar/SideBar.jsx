@@ -13,7 +13,7 @@ const SideBar = () => {
     <>
       {closeSideBar ? (
         <aside
-          className={`w-[250px] fixed bg-white z-10  h-screen  mt-14 max-md:mt-9 pt-5 pb-20 text-sm overflow-auto  ${
+          className={`w-[250px] fixed bg-white z-10  h-screen  mt-14 max-md:mt-14 pt-5 pb-20 text-sm overflow-auto  ${
             closeSideBar ? "md:z-10 visible" : "md:z-10 visible"
           }`}
         >
@@ -102,27 +102,29 @@ const SideBar = () => {
           <Explore />
         </aside>
       ) : (
-        <aside className="mt-20 max-md:hidden bg-white w-14   fixed z-10  max-sm:hidden max-xs:hidden ">
-          {listIconSidebar.map(item => {
-            return (
-              <Link key={item.id} to={item.link}>
-                <section
-                  className={` flex flex-col items-center ml-1 mr-10  pt-2  w-[75px]  overflow-hidden  text-nowrap rounded-xl gap-3 mb-1 h-16 hover:bg-[#e6e6e6]  ${
-                    active === item.id ? "bg-[#e6e6e6]" : ""
-                  }`}
-                  onClick={() => setActive(item.id)}
-                >
-                  <img
-                    src={active === item.id ? item.dark : item.icon}
-                    alt={item.name}
-                    className="h-6"
-                  />
-                  <span className="text-[10px]">{item.name}</span>
-                </section>
-              </Link>
-            );
-          })}
-        </aside>
+        <section className="w-full max-h-screen fixed ">
+          <aside className="mt-20 max-md:hidden bg-white w-14   z-10  max-sm:hidden max-xs:hidden ">
+            {listIconSidebar.map(item => {
+              return (
+                <Link key={item.id} to={item.link}>
+                  <section
+                    className={` flex flex-col items-center ml-1 mr-10  pt-2 relative  w-[75px]  overflow-hidden  text-nowrap rounded-xl gap-3 mb-1 h-16 hover:bg-[#e6e6e6]  ${
+                      active === item.id ? "bg-[#e6e6e6]" : ""
+                    }`}
+                    onClick={() => setActive(item.id)}
+                  >
+                    <img
+                      src={active === item.id ? item.dark : item.icon}
+                      alt={item.name}
+                      className="h-6"
+                    />
+                    <span className="text-[10px]">{item.name}</span>
+                  </section>
+                </Link>
+              );
+            })}
+          </aside>
+        </section>
       )}
       {/* displaying in tablet and mobile */}
       {/* {closeSideBar && (

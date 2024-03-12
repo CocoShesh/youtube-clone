@@ -25,32 +25,32 @@ const ShortVideo = () => {
         ) : (
           <>
             {" "}
-            <section className="w-full flex items-center justify-between pr-3">
-              <section className="flex items-center gap-3 font-bold text-xl">
+            <section className="w-full flex items-center justify-between pr-3  ">
+              <section className="flex items-center gap-3 font-bold text-xl  2xl:mx-20">
                 <img src="/shortVideo.svg" alt="" />
                 <h1>Shorts</h1>
               </section>
               <button
-                className="h-10 w-10 flex items-center justify-center rounded-full hover:bg-[#e5e5e5]"
+                className="h-10 w-10 flex items-center justify-center rounded-full 2xl:mr-20  hover:bg-[#e5e5e5]"
                 onClick={() => setCloseVideo(true)}
               >
                 <TfiClose />
               </button>
             </section>
-            <section className="grid xl:grid-cols-5  lg:grid-cols-5 gap-5 mt-8 mb-20  md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 ">
+            <section className="grid xl:grid-cols-5  lg:grid-cols-5 gap-5 mt-8 mb-20  md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 2xl:mx-20 ">
               {sliceShortVideo.map((item, index) => {
                 return (
                   <section key={index} className="w-full ">
                     <img
                       src={item}
                       alt=""
-                      className=" h-[300px] 2xl:h-[1000px]  w-full rounded-2xl  object-fill  "
+                      className=" h-[300px] 2xl:h-[400px]  w-full rounded-2xl  object-fill  "
                     />
                   </section>
                 );
               })}
             </section>
-            <section className={`relative ${isOpen ? "hidden" : "block"}`}>
+            {/* <section className={`relative ${isOpen ? "hidden" : "block"}`}>
               <hr />
 
               <section className="flex items-center absolute  font-[700] left-1/3  tr -top-5 bg-white justify-center gap-2 w-[350px] h-10 border rounded-full hover:bg-[#e5e5e5]">
@@ -89,7 +89,7 @@ const ShortVideo = () => {
                   </section>
                 </section>
               </>
-            )}{" "}
+            )}{" "} */}
           </>
         )}
       </section>

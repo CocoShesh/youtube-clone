@@ -8,7 +8,7 @@ const Subscriptions = () => {
   return (
     <>
       <section
-        className={`w-screen mt-0 pt-24 px-10  ml-56 max-lg:ml-24   ${
+        className={`w-screen mt-0 pt-24 px-10  ml-56 max-lg:ml-24  2xl:px-20  ${
           closeSideBar ? "" : "px-2  xl:ml-24  md:ml-24 xs:ml-0"
         }`}
       >

@@ -53,7 +53,7 @@ const VideoCard = () => {
 
   return (
     <>
-      <section className="grid lg:grid-cols-3 gap-5 mt-20 md:grid-cols-2 sm:grid-cols-2 2xl:grid-cols-4 xs:grid-cols-1  2xl:align-middle 2xl:mx-44 ">
+      <section className="grid lg:grid-cols-3 gap-5 mt-20 md:grid-cols-2 sm:grid-cols-2 2xl:grid-cols-4 xs:grid-cols-1  2xl:align-middle 2xl:mx-20 ">
         {videos?.map(item => {
           return (
             <section

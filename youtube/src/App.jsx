@@ -17,7 +17,7 @@ function App() {
       <SidebarProvider>
         <Header />
 
-        <section className="flex">
+        <section className="flex  font-roboto">
           <Sidebar />
           <Routes>
             <Route path="/" element={<Home />} />

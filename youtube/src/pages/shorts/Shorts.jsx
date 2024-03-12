@@ -65,7 +65,7 @@ const Shorts = () => {
             return (
               <section
                 key={item.id}
-                className="w-[340px]  relative  h-[570px] flex"
+                className="w-[340px]  relative  h-[570px]   flex"
               >
                 {videoPlay === item.id ? (
                   <FaPause

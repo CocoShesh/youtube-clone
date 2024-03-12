@@ -26,18 +26,18 @@ const ShortVideo = () => {
           <>
             {" "}
             <section className="w-full flex items-center justify-between pr-3  ">
-              <section className="flex items-center gap-3 font-bold text-xl  2xl:mx-20">
+              <section className="flex items-center gap-3 font-bold text-xl  2xl:mx-5">
                 <img src="/shortVideo.svg" alt="" />
                 <h1>Shorts</h1>
               </section>
               <button
-                className="h-10 w-10 flex items-center justify-center rounded-full 2xl:mr-20  hover:bg-[#e5e5e5]"
+                className="h-10 w-10 flex items-center justify-center rounded-full 2xl:mr-10 hover:bg-[#e5e5e5]"
                 onClick={() => setCloseVideo(true)}
               >
                 <TfiClose />
               </button>
             </section>
-            <section className="grid xl:grid-cols-5  lg:grid-cols-5 gap-5 mt-8 mb-20  md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 2xl:mx-20 ">
+            <section className="grid xl:grid-cols-5  lg:grid-cols-5 gap-5 mt-8 mb-20  md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 2xl:mx-5 ">
               {sliceShortVideo.map((item, index) => {
                 return (
                   <section key={index} className="w-full ">

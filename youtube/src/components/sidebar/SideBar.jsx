@@ -11,9 +11,14 @@ const SideBar = () => {
   const [active, setActive] = useState(1);
   return (
     <>
+      {/* <div
+        className={`fixed top-0 left-0 w-full h-full bg-black opacity-25 mt-16 z-10 ${
+          closeSideBar ? "sm:visible" : "lg:hidden"
+        }`}
+      /> */}
       {closeSideBar ? (
         <aside
-          className={`w-[250px] fixed bg-white z-10  h-screen  mt-14 max-md:mt-14 pt-5 pb-20 text-sm overflow-auto  ${
+          className={`w-[250px] fixed bg-white z-10  h-screen  mt-14 max-md:mt-12 pt-5 pb-20 text-sm overflow-auto   ${
             closeSideBar ? "md:z-10 visible" : "md:z-10 visible"
           }`}
         >

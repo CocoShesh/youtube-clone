@@ -27,8 +27,8 @@ const Home = () => {
   return (
     <>
       <section
-        className={`w-screen mt-0 px-10  ml-56 max-lg:ml-24   ${
-          closeSideBar ? "" : "px-2  xl:ml-24  md:ml-24 xs:ml-0"
+        className={`w-screen mt-0 lg:px-8 max-sm:px-5  ml-56 max-lg:ml-24   ${
+          closeSideBar ? "" : "px-5 xl:ml-24   md:ml-24 xs:ml-0"
         }`}
       >
         <section className="flex justify-between  gap-3 text-[#0f0f2c] font-[600] text-sm">

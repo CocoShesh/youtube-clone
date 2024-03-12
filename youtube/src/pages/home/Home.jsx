@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
       <section
-        className={`w-screen mt-0 lg:px-8 max-sm:px-5  ml-56 max-lg:ml-24   ${
+        className={`w-screen mt-0 lg:px-8 sm:px-2 ml-56 max-lg:ml-24   ${
           closeSideBar ? "" : "px-5 xl:ml-24   md:ml-24 xs:ml-0"
         }`}
       >
